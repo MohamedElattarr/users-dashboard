@@ -13,7 +13,7 @@ export default function Home() {
   const [selectedUser, setSelectedUser] = useState(null);
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
+    fetch("")
       .then((res) => {
         if (!res.ok) throw new Error("API Error");
         return res.json();
